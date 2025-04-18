@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shangri-La</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+</head>
+  <body>
+    <header class="banner">
+        <img src="logo.png" alt="logo" class="logo-img" />
+        <div id="greeting">
+            <h3>Loading greeting...</h3>
+        </div>
+        <section id="weather">
+            <h4>The Skies Over Cancún Today</h4>
+            <p id="weather-data">Loading weather...</p>
+          </section>
+    </header>  
+<nav id="menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Activities.html">Activities & Excursions</a></li>
+          <li><a href="Dining.html">Dining</a></li>
+          <li><a href="Rooms.html">Guest Rooms</a></li>
+          <li><a href="Testimonials.html">Testimonials</a></li>
+          <li><a href="spa.html">Spa</a></li>
+          <li><a href="booknow.html">Book Now</a></li>
+        </ul>
+</nav>
+
+<main>
+  <!--CONTENT--->
+  <section class="testimonials">
+    <h1>What Our Guests Are Saying</h1>
+    <p class="intro">Read about the wonderful experiences our guests have had at Shangri La Beach Resort.</p>
+
+    <div class="testimonial-container">
+
+      <div class="testimonial-card">
+        <img src="sarah m.jpg" alt="Sarah M." class="profile-pic">
+        <p class="testimonial-text">
+          "Our stay at Shangri La was absolutely perfect! The service was impeccable, the food was delicious, and the views were breathtaking. We especially loved relaxing by the infinity pool. We can't wait to return!"
+        </p>
+        <p class="testimonial-author">- Sarah M.</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="john b.jpg" alt="John B." class="profile-pic">
+        <p class="testimonial-text">
+          "The beachfront suite was amazing! Waking up to the sound of the waves and stepping right onto the sand was incredible. The resort offered so many activities, we never had a dull moment. Highly recommend the snorkeling!"
+        </p>
+        <p class="testimonial-author">- John B.</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="emily.jpg" alt="Emily K." class="profile-pic">
+        <p class="testimonial-text">
+          "We traveled with our two young children, and the Kids' Club was a lifesaver! The staff were fantastic, and our kids had a blast. This allowed us some much-needed relaxation time. The resort is very family-friendly."
+        </p>
+        <p class="testimonial-author">- Emily K.</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="david.jpg" alt="David L." class="profile-pic">
+        <p class="testimonial-text">
+          "The spa experience was divine. The therapists were skilled, and the atmosphere was so peaceful. It was the perfect way to unwind and de-stress. We left feeling completely rejuvenated."
+        </p>
+        <p class="testimonial-author">- David L.</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="jessica .jpg" alt="Jessica P." class="profile-pic">
+        <p class="testimonial-text">
+          "From the moment we arrived, the staff made us feel welcome and well taken care of. The attention to detail was outstanding. Shangri La truly lives up to its name - a little slice of paradise!"
+        </p>
+        <p class="testimonial-author">- Jessica P.</p>
+      </div>
+
+    <div class="testimonial-form">
+        <h2>Share Your Experience</h2>
+        
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+  
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+  
+          <label for="photo">Profile Photo</label>
+          <input type="file" id="photo" name="photo" accept="image/*" />
+  
+          <label for="message">Your Testimonial</label>
+          <textarea id="message" name="message" required></textarea>
+  
+          <button type="submit">Submit Testimonial</button>
+        </form>
+      </div>
+
+    <p>We are always striving to provide exceptional experiences for our guests. If you have enjoyed your stay at Shangri La Beach Resort, we would love to hear from you!</p>
+  </section>
+</main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Shangri-La Hotel · Cancun, Mexico · All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="weather.js"></script>
+</body>
+</html>
