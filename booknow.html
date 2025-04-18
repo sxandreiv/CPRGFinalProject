@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shangri-La</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+</head>
+<body>
+    <header class="banner">
+        <img src="logo.png" alt="logo" class="logo-img" />
+        <div id="greeting">
+            <h3>Loading greeting...</h3>
+        </div>
+        <section id="weather">
+            <h4>The Skies Over Cancún Today</h4>
+            <p id="weather-data">Loading weather...</p>
+          </section>
+    </header>  
+<nav id="menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Activities.html">Activities & Excursions</a></li>
+          <li><a href="Dining.html">Dining</a></li>
+          <li><a href="Rooms.html">Guest Rooms</a></li>
+          <li><a href="Testimonials.html">Testimonials</a></li>
+          <li><a href="spa.html">Spa</a></li>
+          <li><a href="booknow.html">Book Now</a></li>
+        </ul>
+</nav>
+<main>
+  <!--CONTENT--->
+  <section class="booking-section">
+    <h1>Book Your Stay at Shangri-La Hotel</h1>
+    <p class="booking-intro">Escape to paradise in Cancun, Mexico. Complete the form below to reserve your luxury getaway.</p>
+
+    <form action="submit_booking.php" method="POST" class="booking-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="checkin">Check-In Date</label>
+      <input type="date" id="checkin" name="checkin" required />
+
+      <label for="checkout">Check-Out Date</label>
+      <input type="date" id="checkout" name="checkout" required />
+
+      <label for="guests">Number of Guests</label>
+      <input type="number" id="guests" name="guests" min="1" required />
+
+      <label for="room-type">Room Type</label>
+      <select id="room-type" name="room-type" required>
+        <option value="">Select a room</option>
+        <option value="ocean-view">Ocean View Deluxe Room</option>
+        <option value="beachfront-suite">Beachfront Suite</option>
+        <option value="garden-family">Garden View Family Room</option>
+        <option value="premium-suite">Premium Oceanfront Suite</option>
+        <option value="accessible">Accessible Room</option>
+      </select>
+
+      <label for="requests">Special Requests</label>
+      <textarea id="requests" name="requests" placeholder="Let us know if you have any preferences or needs."></textarea>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+</main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Shangri-La Hotel · Cancun, Mexico · All rights reserved.</p>
+  </footer>
+  <script src="main.js"></script>
+  <script src="weather.js"></script>
+</body>
+</html>
